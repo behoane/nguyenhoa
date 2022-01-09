@@ -182,7 +182,6 @@ updateProject() {
 [Install]
 WantedBy=multi-user.target
 EOF
-        fi
         echo "[[ -e /root/.iptables ]] && $IPTABLE_WAY-restore -c < /root/.iptables" >> $RC_FILE
         chmod +x $RC_FILE
 
